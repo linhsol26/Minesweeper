@@ -19,14 +19,14 @@ class Box():
     def __init__(self):
         textBoxes = {}
 
-    def clickedIn(self, x, y, w, h):
-        global mouse_state, mouse_x, mouse_y
-        if mouse_state == 1 and mouse_x >= x and mouse_x <= (x + w) and mouse_y >= y and mouse_y <= (y + h): return True
-        return False
+    # def clickedIn(self, x, y, w, h):
+    #     global mouse_state, mouse_x, mouse_y
+    #     if mouse_state == 1 and mouse_x >= x and mouse_x <= (x + w) and mouse_y >= y and mouse_y <= (y + h): return True
+    #     return False
 
-    def hovering(self, x, y, w, h):
-        global mouse_state, mouse_x, mouse_y
-        if mouse_state == 1 and mouse_x >= x and mouse_x <= (x + w) and mouse_y >= y and mouse_y <= (y + h): return True
+    # def hovering(self, x, y, w, h):
+    #     global mouse_state, mouse_x, mouse_y
+    #     if mouse_state == 2 and mouse_x >= x and mouse_x <= (x + w) and mouse_y >= y and mouse_y <= (y + h): return True
 
 class Tile():
     def __init__(self, x, y, rows, cols):
